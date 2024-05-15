@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Student Registration Form</h1>
+        <div class="divmain">
+
+            <div class="firstsection">
+                <div id="msg"></div>
+                <!-- form section starts include input and label -->
+                <form action="" id="form" autocomplete="off">
+                    <label for="studentname">Student Name:</label><br>
+                    <input type="text" id="studentname" class="forminput" oninput="validateInput(this)"><br>
+                    <label for="studentid">Student Id:</label><br>
+                    <input type="number" id="studentid" class="forminput"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" class="forminput"><br>
+                    <label for="contactno">Contact No:</label><br>
+                    <input type="number" id="contactno" class="forminput"><br><br>
+
+                </form>
+                <input type="button" id="btn" value="Add" onclick="submit()">
+
+
+                <br>
+
+                <br>
+            </div>
+            <!-- table section starts -->
+            <div class="secondsection">
+
+
+                <table id="table">
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student Id</th>
+                        <th>Email Id</th>
+                        <th> Contact No</th>
+
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
